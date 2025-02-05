@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
+             x:Class="Ilac.MedCalendarPage"
+             Loaded="OnloadTitle">
+
+
+    <VerticalStackLayout Padding="10"
+            Spacing="10">
+        <!-- Ay ve Yıl Başlığı -->
+        <Grid RowDefinitions="Auto"
+                ColumnDefinitions="*, Auto, *">
+            <Button Text="←"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"
+                    Clicked="PreviousMonth_Clicked"/>
+
+            <Label Text="{Binding CurrentMonthYear}"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+
+            <Button Text="→"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Clicked="NextMonth_Clicked"/>
+        </Grid>
+
+        <!-- Günlerin İsimleri -->
+        <Grid ColumnDefinitions="*,*,*,*,*,*,*"
+                Padding="5"
+                RowDefinitions="Auto">
+            <!-- Günlerin İsimleri -->
+            <Label Text="Pzt"
+                    Grid.Column="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="16"
+                    FontAttributes="Bold"/>
+            <Label Text="Sal"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="16"
+                    FontAttributes="Bold"/>
+            <Label Text="Çar"
+                    Grid.Column="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="16"
+                    FontAttributes="Bold"/>
+            <Label Text="Per"
+                    Grid.Column="3"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="16"
+                    FontAttributes="Bold"/>
+            <Label Text="Cum"
+                    Grid.Column="4"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="16"
+                    FontAttributes="Bold"/>
+            <Label Text="Cmt"
+                    Grid.Column="5"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    TextColor="Red"/>
+            <Label Text="Paz"
+                    Grid.Column="6"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    TextColor="Red"/>
+        </Grid>
+
+
+
+        <!-- Takvim Günleri -->
+        <Grid x:Name="CalendarGrid"
+                ColumnDefinitions="*,*,*,*,*,*,*"
+                RowSpacing="5"
+                ColumnSpacing="5">
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

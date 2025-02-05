@@ -1,0 +1,13 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ilac.AddMedicationPage"
+             Title="İlaç Ekle">
+    <StackLayout Padding="20">
+        <Entry x:Name="MedicationNameEntry" Placeholder="İlaç Adı" />
+        <Entry x:Name="MedicationDetailEntry" Placeholder="İlaç Açıklaması" />
+        <Entry x:Name="TotalPieceEntry" Placeholder="İlaç Adedi" Keyboard="Numeric" />
+        <Entry x:Name="DailyUsageEntry" Placeholder="Günlük Kullanım Adedi" Keyboard="Numeric" />
+        <Entry x:Name="UsageCountEntry" Placeholder="Günde Kaç Kere?" Keyboard="Numeric" />
+        <Button Text="Devam" Clicked="OnContinueClicked" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ilac.MainPage"
+             Loaded ="OnloadTitle">
+
+   <Grid>
+        <StackLayout Padding="20" Spacing="20">
+            
+            <!-- Header -->
+            <Label Text="İlaç Takip Sistemi" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <!-- Search Bar -->
+            <SearchBar x:Name="MedicationsSearchBar"
+                       Placeholder="Ara..."
+                       SearchCommand="{Binding SearchCommand}"
+                       TextChanged="OnSearchBarTextChanged" />
+
+            <!-- Medications List -->
+            <ListView x:Name="MedicationsListView" 
+                      HasUnevenRows="True" 
+                      SeparatorVisibility="Default" 
+                      ItemTapped="OnMedicationTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Border  
+                                   Padding="10" 
+                                   Margin="5" 
+                                   BackgroundColor="LightGray">
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" >
+                                        <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18" TextColor="Black"/>
+                                        <Label Text="{Binding Times}" FontSize="14" TextColor="Gray"/>
+                                        <Label Text="{Binding CurrDay}" FontSize="14" TextColor="Gray"/>
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="End">
+                                        <Button Text="Güncelle"
+                                                FontSize="12"
+                                                BackgroundColor="Blue"
+                                                TextColor="White"
+                                                Clicked="UpdateMedicationButton_Clicked"
+                                                CommandParameter="{Binding ID}"/>
+                                        <Button Text="Sil"
+                                                FontSize="12"
+                                                BackgroundColor="Red" 
+                                                TextColor="White" 
+                                                Clicked = "DeleteMedicationButton_Clicked"
+                                                CommandParameter ="{Binding ID}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Border>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+                <Button Text="Tüm İlaçları Getir"
+                        Clicked="GetFromSqlite_Clicked"
+                        BackgroundColor="LightBlue"
+                        TextColor="White"/>
+                <Button Text="Zamanı gelen İlaçları Getir"
+                        Clicked="OnTimeMedication_Clicked"
+                        BackgroundColor="LightGreen"
+                        TextColor="White"/>
+            </StackLayout>
+
+
+            <Button Text="Yeni İlaç Ekle"
+                    Clicked="AddMedicationButton_Clicked"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"/>
+
+        </StackLayout>
+    </Grid>
+   
+
+</ContentPage>

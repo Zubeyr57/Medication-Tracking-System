@@ -1,0 +1,73 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Ilac
+build_property.ProjectDir = C:\Users\zubo ksc\Desktop\denme\Ilac\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/zubo ksc/Desktop/denme/Ilac/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ilac.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/zubo ksc/Desktop/denme/Ilac/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ilac.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/zubo ksc/Desktop/denme/Ilac/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ilac.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/zubo ksc/Desktop/denme/Ilac/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ilac.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/zubo ksc/Desktop/denme/Ilac/View/AddMed/AddMedicationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ilac.View.AddMed.AddMedicationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\AddMed\AddMedicationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\AddMed\AddMedicationPage.xaml
+
+[C:/Users/zubo ksc/Desktop/denme/Ilac/View/Main/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ilac.View.Main.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Main\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Main\MainPage.xaml
+
+[C:/Users/zubo ksc/Desktop/denme/Ilac/View/MedCalendar/MedCalendarPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ilac.View.MedCalendar.MedCalendarPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MedCalendar\MedCalendarPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MedCalendar\MedCalendarPage.xaml
+
+[C:/Users/zubo ksc/Desktop/denme/Ilac/View/MedTimes/SetMedicationTimesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ilac.View.MedTimes.SetMedicationTimesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MedTimes\SetMedicationTimesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MedTimes\SetMedicationTimesPage.xaml
+
+[C:/Users/zubo ksc/Desktop/denme/Ilac/View/UsedMed/UsedMed.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ilac.View.UsedMed.UsedMed.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsedMed\UsedMed.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsedMed\UsedMed.xaml
